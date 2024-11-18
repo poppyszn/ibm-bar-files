@@ -2,7 +2,7 @@ FROM ibmcom/ace-server:latest
 
 USER root
 
-COPY *.bar /tmp
+COPY *.bar /tmp/
 
 RUN export LICENSE=accept \
     && set -x && for FILE in /tmp/*.bar; do \
